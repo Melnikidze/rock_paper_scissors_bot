@@ -25,7 +25,7 @@ async def main():
     config: Config = load_config()
 
     # bot and dispatcher initialization
-    bot: Bot = Bot(config.tg_bot.token, parse_mod='HTML')
+    bot: Bot = Bot(token=config.tg_bot.token, parse_mod='HTML')
     dp: Dispatcher = Dispatcher()
 
     # routers registration in dispatcher
